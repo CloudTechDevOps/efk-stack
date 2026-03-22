@@ -10,6 +10,6 @@ spec:
   selector:
     app: kibana
   ports:
-    - port: 5601
+    - protocol: TCP
+      port: 80          # Port exposed inside the cluster
       targetPort: 5601
-
